@@ -1,0 +1,9 @@
+node_modules/
+dist*/
+*.log
+.env
+.env.*
+ayarlar.json
+presence-cover.*
+*.exe
+*.zip
