@@ -1,31 +1,20 @@
 # Discord Oynuyor Studio
 
-Discord profilindeki **Oynuyor** alanını Rich Presence ile düzenleyen Windows masaüstü uygulaması.
+Discord profilindeki **Oynuyor** durumunu isim ve görselle özelleştiren Windows uygulaması.
 
-## İlk kurulum
+## İndirme
 
-1. [Discord Developer Portal](https://discord.com/developers/applications) sayfasını aç.
-2. **New Application** ile bir uygulama oluştur. Discord'un üst başlıkta göstermesini istediğin adı ver.
-3. **General Information** sayfasındaki **Application ID** değerini kopyala.
-4. Görsel kullanacaksan **Rich Presence → Art Assets** bölümünde kare bir PNG/JPEG/WebP yükle. Verdiğin küçük harfli anahtarı uygulamadaki **Görsel** alanına yaz. Alternatif olarak herkese açık bir HTTPS görsel adresi kullan.
-5. Discord'un masaüstü uygulamasını aç, `Discord-Oynuyor-Studio-1.0.0.exe` dosyasını çalıştır ve **Discord’da Göster** düğmesine bas.
+Kurulum dosyaları [Releases](https://github.com/novax1213/discord-oynuyor-studio/releases) bölümünde paylaşılır.
 
-> Discord masaüstü istemcisinde **Ayarlar → Etkinlik Gizliliği → Mevcut etkinliği durum mesajı olarak göster** açık olmalıdır.
+**Kurulum EXE’sinin yüklenmesi henüz tamamlanmadı.** GitHub’ın otomatik oluşturduğu “Source code” arşivleri kurulum dosyası değildir.
 
-## Geliştirme
+Yüklendiğinde indirilecek dosya: `Oynuyor-Studio-Kurulum-1.0.0.exe`. Ayrı DLL, BAT veya Node.js indirmeniz gerekmez.
 
-```powershell
-npm install
-npm start
-```
+## Kullanım
 
-Test ve taşınabilir Windows paketi:
+1. Kurulum EXE’sini çalıştırıp uygulamayı kurun.
+2. Discord masaüstü uygulamasını açın.
+3. [Discord Developer Portal](https://discord.com/developers/applications) üzerinden oluşturduğunuz uygulamanın Application ID değerini girin.
+4. Etkinlik bilgilerini ve görselinizi ayarlayıp **Discord’da Göster** düğmesine basın.
 
-```powershell
-npm test
-npm run dist
-```
-
-## Gizlilik
-
-Uygulama bot tokeni veya Discord parolası istemez. Ayarlar yalnızca bilgisayarda Electron kullanıcı verisi klasöründeki `ayarlar.json` dosyasında saklanır. Discord bağlantısı yerel IPC üzerinden açık Discord masaüstü istemcisine yapılır.
+Discord etkinlik paylaşımının açık olması gerekir. Discord parolanızı veya bot tokeninizi paylaşmayın.
